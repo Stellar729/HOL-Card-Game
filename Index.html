@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOL: The Card Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f1f1;
+            text-align: center;
+        }
+        #menu, #game {
+            display: none;
+        }
+        .button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #3b5998;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        .button:hover {
+            background-color: #5f84d7;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main Menu -->
+    <div id="menu">
+        <h1>HOL: The Card Game</h1>
+        <button class="button" id="startGameBtn">Start Game</button>
+        <button class="button" id="instructionsBtn">Instructions</button>
+        <button class="button" id="exitBtn">Exit</button>
+    </div>
+
+    <!-- Game -->
+    <div id="game">
+        <h1>Game In Progress</h1>
+        <div id="playerHealth">Player Health: 100</div>
+        <div id="aiHealth">AI Health: 100</div>
+        <div id="playerHand"></div>
+        <div id="battlefield"></div>
+        <button class="button" id="endTurnBtn">End Turn</button>
+        <div id="gameLog"></div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
